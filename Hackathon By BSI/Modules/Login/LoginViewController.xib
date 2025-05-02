@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Hackathon_By_BSI" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="qbI-Ai-bd5" id="1Z0-Ea-ODe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qbI-Ai-bd5">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-prelogin" translatesAutoresizingMaskIntoConstraints="NO" id="oYz-ln-K6h">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="1400"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1400" id="5ay-y0-qJK"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-logo-byond" translatesAutoresizingMaskIntoConstraints="NO" id="7Ui-9j-BEr">
+                    <rect key="frame" x="5" y="159" width="310" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="RWd-aE-gS4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assalamu’alaikum" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXR-At-CIf">
+                    <rect key="frame" x="24" y="463" width="345" height="36.666666666666686"/>
+                    <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaP-1D-vJs">
+                    <rect key="frame" x="24" y="523.66666666666663" width="125" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="HTI-lk-gNe"/>
+                        <constraint firstAttribute="height" constant="48" id="udX-BF-kr5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="OLi-L3-k4o"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Ui-9j-BEr" firstAttribute="top" secondItem="OLi-L3-k4o" secondAttribute="top" constant="100" id="1Wf-vD-j01"/>
+                <constraint firstAttribute="trailing" secondItem="oYz-ln-K6h" secondAttribute="trailing" id="8FI-bZ-ufH"/>
+                <constraint firstItem="eaP-1D-vJs" firstAttribute="top" secondItem="sXR-At-CIf" secondAttribute="bottom" constant="24" id="Ig0-uy-KTQ"/>
+                <constraint firstItem="oYz-ln-K6h" firstAttribute="leading" secondItem="OLi-L3-k4o" secondAttribute="leading" id="PsT-oS-ycp"/>
+                <constraint firstItem="sXR-At-CIf" firstAttribute="top" secondItem="7Ui-9j-BEr" secondAttribute="bottom" constant="24" id="SQM-CK-SnA"/>
+                <constraint firstItem="OLi-L3-k4o" firstAttribute="trailing" secondItem="sXR-At-CIf" secondAttribute="trailing" constant="24" id="bur-f3-EgL"/>
+                <constraint firstItem="oYz-ln-K6h" firstAttribute="top" secondItem="qbI-Ai-bd5" secondAttribute="top" id="e4r-2g-lak"/>
+                <constraint firstItem="oYz-ln-K6h" firstAttribute="leading" secondItem="qbI-Ai-bd5" secondAttribute="leading" id="eIw-QM-kPE"/>
+                <constraint firstItem="OLi-L3-k4o" firstAttribute="trailing" secondItem="oYz-ln-K6h" secondAttribute="trailing" id="eeT-Ee-Pj4"/>
+                <constraint firstItem="sXR-At-CIf" firstAttribute="leading" secondItem="OLi-L3-k4o" secondAttribute="leading" constant="24" id="i5Z-AU-TKQ"/>
+                <constraint firstItem="7Ui-9j-BEr" firstAttribute="leading" secondItem="OLi-L3-k4o" secondAttribute="leading" constant="5" id="mf7-26-jeP"/>
+                <constraint firstItem="eaP-1D-vJs" firstAttribute="leading" secondItem="OLi-L3-k4o" secondAttribute="leading" constant="24" id="y3b-iC-Vmo"/>
+            </constraints>
+            <point key="canvasLocation" x="319.84732824427482" y="7.746478873239437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-prelogin" width="375" height="1474"/>
+        <image name="ic-logo-byond" width="310" height="332"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
