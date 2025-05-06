@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7418D1082DC4B35300A5B6D5 /* MenuProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1072DC4B35300A5B6D5 /* MenuProfilePresenter.swift */; };
+		7418D10A2DC4B3A600A5B6D5 /* MenuProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1092DC4B3A600A5B6D5 /* MenuProfileRouter.swift */; };
+		7418D10E2DC4BD9D00A5B6D5 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D10C2DC4BD9D00A5B6D5 /* ChallengeViewController.swift */; };
+		7418D10F2DC4BD9D00A5B6D5 /* ChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7418D10D2DC4BD9D00A5B6D5 /* ChallengeViewController.xib */; };
+		7418D1112DC4BDD300A5B6D5 /* ChallengePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1102DC4BDD300A5B6D5 /* ChallengePresenter.swift */; };
+		7418D1132DC4BDE000A5B6D5 /* ChallengeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1122DC4BDE000A5B6D5 /* ChallengeRouter.swift */; };
+		7418D1152DC4BDEF00A5B6D5 /* ChallengeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1142DC4BDEF00A5B6D5 /* ChallengeInteractor.swift */; };
+		7418D1172DC4C65200A5B6D5 /* MenuProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1162DC4C65200A5B6D5 /* MenuProfileInteractor.swift */; };
+		7418D11F2DC655D500A5B6D5 /* BadgesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D11D2DC655D500A5B6D5 /* BadgesViewCell.swift */; };
+		7418D1202DC655D500A5B6D5 /* BadgesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7418D11E2DC655D500A5B6D5 /* BadgesViewCell.xib */; };
+		7418D1272DC6614F00A5B6D5 /* BadgesSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1252DC6614F00A5B6D5 /* BadgesSheetViewController.swift */; };
+		7418D1282DC6614F00A5B6D5 /* BadgesSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7418D1262DC6614F00A5B6D5 /* BadgesSheetViewController.xib */; };
+		7418D12D2DC735B700A5B6D5 /* NotifBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D12B2DC735B700A5B6D5 /* NotifBadgesViewController.swift */; };
+		7418D12E2DC735B700A5B6D5 /* NotifBadgesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7418D12C2DC735B700A5B6D5 /* NotifBadgesViewController.xib */; };
+		7418D1302DC735D700A5B6D5 /* NotifBadgesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D12F2DC735D700A5B6D5 /* NotifBadgesPresenter.swift */; };
+		7418D1322DC735E200A5B6D5 /* NotifBadgesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1312DC735E200A5B6D5 /* NotifBadgesRouter.swift */; };
+		7418D1342DC735ED00A5B6D5 /* NotifBadgesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D1332DC735ED00A5B6D5 /* NotifBadgesInteractor.swift */; };
+		7432A7BC2DC4A3EA00CE64D9 /* MenuProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7432A7BA2DC4A3EA00CE64D9 /* MenuProfileView.swift */; };
+		7432A7BD2DC4A3EA00CE64D9 /* MenuProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7432A7BB2DC4A3EA00CE64D9 /* MenuProfileView.xib */; };
 		FA1CE9022DC48385004D2E9F /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9012DC48385004D2E9F /* GeneralButton.swift */; };
 		FA1CE9052DC49BCE004D2E9F /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9042DC49BCE004D2E9F /* View+ext.swift */; };
 		FA1CE90D2DC4A901004D2E9F /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9072DC4A901004D2E9F /* DashboardPresenter.swift */; };
@@ -34,6 +53,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7418D1072DC4B35300A5B6D5 /* MenuProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfilePresenter.swift; sourceTree = "<group>"; };
+		7418D1092DC4B3A600A5B6D5 /* MenuProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileRouter.swift; sourceTree = "<group>"; };
+		7418D10C2DC4BD9D00A5B6D5 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		7418D10D2DC4BD9D00A5B6D5 /* ChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeViewController.xib; sourceTree = "<group>"; };
+		7418D1102DC4BDD300A5B6D5 /* ChallengePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePresenter.swift; sourceTree = "<group>"; };
+		7418D1122DC4BDE000A5B6D5 /* ChallengeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRouter.swift; sourceTree = "<group>"; };
+		7418D1142DC4BDEF00A5B6D5 /* ChallengeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeInteractor.swift; sourceTree = "<group>"; };
+		7418D1162DC4C65200A5B6D5 /* MenuProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileInteractor.swift; sourceTree = "<group>"; };
+		7418D11D2DC655D500A5B6D5 /* BadgesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewCell.swift; sourceTree = "<group>"; };
+		7418D11E2DC655D500A5B6D5 /* BadgesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgesViewCell.xib; sourceTree = "<group>"; };
+		7418D1252DC6614F00A5B6D5 /* BadgesSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesSheetViewController.swift; sourceTree = "<group>"; };
+		7418D1262DC6614F00A5B6D5 /* BadgesSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgesSheetViewController.xib; sourceTree = "<group>"; };
+		7418D12B2DC735B700A5B6D5 /* NotifBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifBadgesViewController.swift; sourceTree = "<group>"; };
+		7418D12C2DC735B700A5B6D5 /* NotifBadgesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifBadgesViewController.xib; sourceTree = "<group>"; };
+		7418D12F2DC735D700A5B6D5 /* NotifBadgesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifBadgesPresenter.swift; sourceTree = "<group>"; };
+		7418D1312DC735E200A5B6D5 /* NotifBadgesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifBadgesRouter.swift; sourceTree = "<group>"; };
+		7418D1332DC735ED00A5B6D5 /* NotifBadgesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifBadgesInteractor.swift; sourceTree = "<group>"; };
+		7432A7BA2DC4A3EA00CE64D9 /* MenuProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileView.swift; sourceTree = "<group>"; };
+		7432A7BB2DC4A3EA00CE64D9 /* MenuProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuProfileView.xib; sourceTree = "<group>"; };
 		FA1CE9012DC48385004D2E9F /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		FA1CE9042DC49BCE004D2E9F /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		FA1CE9072DC4A901004D2E9F /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
@@ -73,6 +111,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7418D10B2DC4B47E00A5B6D5 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				7418D12A2DC7359800A5B6D5 /* NotifBadges */,
+				7418D1292DC7349C00A5B6D5 /* BadgesSheet */,
+				7418D11C2DC652B000A5B6D5 /* BadgesCell */,
+				7418D10C2DC4BD9D00A5B6D5 /* ChallengeViewController.swift */,
+				7418D10D2DC4BD9D00A5B6D5 /* ChallengeViewController.xib */,
+				7418D1102DC4BDD300A5B6D5 /* ChallengePresenter.swift */,
+				7418D1122DC4BDE000A5B6D5 /* ChallengeRouter.swift */,
+				7418D1142DC4BDEF00A5B6D5 /* ChallengeInteractor.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		7418D11C2DC652B000A5B6D5 /* BadgesCell */ = {
+			isa = PBXGroup;
+			children = (
+				7418D11D2DC655D500A5B6D5 /* BadgesViewCell.swift */,
+				7418D11E2DC655D500A5B6D5 /* BadgesViewCell.xib */,
+			);
+			path = BadgesCell;
+			sourceTree = "<group>";
+		};
+		7418D1292DC7349C00A5B6D5 /* BadgesSheet */ = {
+			isa = PBXGroup;
+			children = (
+				7418D1252DC6614F00A5B6D5 /* BadgesSheetViewController.swift */,
+				7418D1262DC6614F00A5B6D5 /* BadgesSheetViewController.xib */,
+			);
+			path = BadgesSheet;
+			sourceTree = "<group>";
+		};
+		7418D12A2DC7359800A5B6D5 /* NotifBadges */ = {
+			isa = PBXGroup;
+			children = (
+				7418D12B2DC735B700A5B6D5 /* NotifBadgesViewController.swift */,
+				7418D12C2DC735B700A5B6D5 /* NotifBadgesViewController.xib */,
+				7418D12F2DC735D700A5B6D5 /* NotifBadgesPresenter.swift */,
+				7418D1312DC735E200A5B6D5 /* NotifBadgesRouter.swift */,
+				7418D1332DC735ED00A5B6D5 /* NotifBadgesInteractor.swift */,
+			);
+			path = NotifBadges;
+			sourceTree = "<group>";
+		};
+		7432A7B72DC4A2D700CE64D9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7432A7BA2DC4A3EA00CE64D9 /* MenuProfileView.swift */,
+				7432A7BB2DC4A3EA00CE64D9 /* MenuProfileView.xib */,
+				7418D1072DC4B35300A5B6D5 /* MenuProfilePresenter.swift */,
+				7418D1092DC4B3A600A5B6D5 /* MenuProfileRouter.swift */,
+				7418D1162DC4C65200A5B6D5 /* MenuProfileInteractor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		FA1CE8FF2DC4836F004D2E9F /* Elements */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +266,8 @@
 		FA360E7C2DC221D200B9FB61 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7418D10B2DC4B47E00A5B6D5 /* Challenge */,
+				7432A7B72DC4A2D700CE64D9 /* Profile */,
 				FA1CE9062DC4A8ED004D2E9F /* Dashboard */,
 				FA298FF82DC479890047763E /* Login */,
 			);
@@ -240,6 +337,11 @@
 				FA1CE9122DC4A901004D2E9F /* DashboardViewController.xib in Resources */,
 				FA360E722DC2203A00B9FB61 /* Assets.xcassets in Resources */,
 				FA360E702DC2203800B9FB61 /* Main.storyboard in Resources */,
+				7418D1282DC6614F00A5B6D5 /* BadgesSheetViewController.xib in Resources */,
+				7418D1202DC655D500A5B6D5 /* BadgesViewCell.xib in Resources */,
+				7418D12E2DC735B700A5B6D5 /* NotifBadgesViewController.xib in Resources */,
+				7418D10F2DC4BD9D00A5B6D5 /* ChallengeViewController.xib in Resources */,
+				7432A7BD2DC4A3EA00CE64D9 /* MenuProfileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,14 +354,33 @@
 			files = (
 				FA298FFF2DC479AC0047763E /* LoginPresenter.swift in Sources */,
 				FA2990022DC479AC0047763E /* LoginInteractor.swift in Sources */,
+				7418D10A2DC4B3A600A5B6D5 /* MenuProfileRouter.swift in Sources */,
 				FA2990032DC479AC0047763E /* LoginEntity.swift in Sources */,
+				7418D1082DC4B35300A5B6D5 /* MenuProfilePresenter.swift in Sources */,
 				FA360E6D2DC2203800B9FB61 /* ViewController.swift in Sources */,
+				7418D1112DC4BDD300A5B6D5 /* ChallengePresenter.swift in Sources */,
+				7418D1172DC4C65200A5B6D5 /* MenuProfileInteractor.swift in Sources */,
 				FA1CE9022DC48385004D2E9F /* GeneralButton.swift in Sources */,
 				FA1CE9102DC4A901004D2E9F /* DashboardInteractor.swift in Sources */,
 				FA298FE32DC476300047763E /* BasePresenter.swift in Sources */,
 				FA298FE72DC476740047763E /* BaseRouter.swift in Sources */,
+				7418D1152DC4BDEF00A5B6D5 /* ChallengeInteractor.swift in Sources */,
 				FA298FE12DC475E50047763E /* BaseViewController.swift in Sources */,
+				7418D10E2DC4BD9D00A5B6D5 /* ChallengeViewController.swift in Sources */,
+				7432A7BC2DC4A3EA00CE64D9 /* MenuProfileView.swift in Sources */,
 				FA1CE9052DC49BCE004D2E9F /* View+ext.swift in Sources */,
+				7418D1272DC6614F00A5B6D5 /* BadgesSheetViewController.swift in Sources */,
+				7418D1322DC735E200A5B6D5 /* NotifBadgesRouter.swift in Sources */,
+				FA2990002DC479AC0047763E /* LoginRouter.swift in Sources */,
+				FA360E692DC2203800B9FB61 /* AppDelegate.swift in Sources */,
+				7418D1302DC735D700A5B6D5 /* NotifBadgesPresenter.swift in Sources */,
+				7418D1132DC4BDE000A5B6D5 /* ChallengeRouter.swift in Sources */,
+				7418D12D2DC735B700A5B6D5 /* NotifBadgesViewController.swift in Sources */,
+				FA360E6B2DC2203800B9FB61 /* SceneDelegate.swift in Sources */,
+				FA2990012DC479AC0047763E /* LoginViewController.swift in Sources */,
+				FA298FE52DC476520047763E /* BaseInteractor.swift in Sources */,
+				7418D11F2DC655D500A5B6D5 /* BadgesViewCell.swift in Sources */,
+				7418D1342DC735ED00A5B6D5 /* NotifBadgesInteractor.swift in Sources */,
 				FA1CE90E2DC4A901004D2E9F /* DashboardRouter.swift in Sources */,
 				FA2990002DC479AC0047763E /* LoginRouter.swift in Sources */,
 				FA360E692DC2203800B9FB61 /* AppDelegate.swift in Sources */,
