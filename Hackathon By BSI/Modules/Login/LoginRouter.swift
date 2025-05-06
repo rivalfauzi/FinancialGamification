@@ -20,4 +20,9 @@ class LoginRouter: BaseRouter {
         return view
     }
     
+    func navigateToDashboard(from navigation: UINavigationController) {
+        let view = DashboardRouter().showView()
+        navigation.pushViewController(view, animated: true)
+    }
+    
 }

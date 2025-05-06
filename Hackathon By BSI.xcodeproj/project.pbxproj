@@ -28,6 +28,12 @@
 		7432A7BD2DC4A3EA00CE64D9 /* MenuProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7432A7BB2DC4A3EA00CE64D9 /* MenuProfileView.xib */; };
 		FA1CE9022DC48385004D2E9F /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9012DC48385004D2E9F /* GeneralButton.swift */; };
 		FA1CE9052DC49BCE004D2E9F /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9042DC49BCE004D2E9F /* View+ext.swift */; };
+		FA1CE90D2DC4A901004D2E9F /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9072DC4A901004D2E9F /* DashboardPresenter.swift */; };
+		FA1CE90E2DC4A901004D2E9F /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9082DC4A901004D2E9F /* DashboardRouter.swift */; };
+		FA1CE90F2DC4A901004D2E9F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE9092DC4A901004D2E9F /* DashboardViewController.swift */; };
+		FA1CE9102DC4A901004D2E9F /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE90A2DC4A901004D2E9F /* DashboardInteractor.swift */; };
+		FA1CE9112DC4A901004D2E9F /* DashboardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE90B2DC4A901004D2E9F /* DashboardEntity.swift */; };
+		FA1CE9122DC4A901004D2E9F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE90C2DC4A901004D2E9F /* DashboardViewController.xib */; };
 		FA298FE12DC475E50047763E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA298FE02DC475E50047763E /* BaseViewController.swift */; };
 		FA298FE32DC476300047763E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA298FE22DC476300047763E /* BasePresenter.swift */; };
 		FA298FE52DC476520047763E /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA298FE42DC476520047763E /* BaseInteractor.swift */; };
@@ -68,6 +74,12 @@
 		7432A7BB2DC4A3EA00CE64D9 /* MenuProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuProfileView.xib; sourceTree = "<group>"; };
 		FA1CE9012DC48385004D2E9F /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		FA1CE9042DC49BCE004D2E9F /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
+		FA1CE9072DC4A901004D2E9F /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		FA1CE9082DC4A901004D2E9F /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		FA1CE9092DC4A901004D2E9F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		FA1CE90A2DC4A901004D2E9F /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		FA1CE90B2DC4A901004D2E9F /* DashboardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEntity.swift; sourceTree = "<group>"; };
+		FA1CE90C2DC4A901004D2E9F /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		FA298FE02DC475E50047763E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA298FE22DC476300047763E /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		FA298FE42DC476520047763E /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
@@ -180,6 +192,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		FA1CE9062DC4A8ED004D2E9F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CE9072DC4A901004D2E9F /* DashboardPresenter.swift */,
+				FA1CE9082DC4A901004D2E9F /* DashboardRouter.swift */,
+				FA1CE9092DC4A901004D2E9F /* DashboardViewController.swift */,
+				FA1CE90A2DC4A901004D2E9F /* DashboardInteractor.swift */,
+				FA1CE90B2DC4A901004D2E9F /* DashboardEntity.swift */,
+				FA1CE90C2DC4A901004D2E9F /* DashboardViewController.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		FA298FDF2DC475C90047763E /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +268,7 @@
 			children = (
 				7418D10B2DC4B47E00A5B6D5 /* Challenge */,
 				7432A7B72DC4A2D700CE64D9 /* Profile */,
+				FA1CE9062DC4A8ED004D2E9F /* Dashboard */,
 				FA298FF82DC479890047763E /* Login */,
 			);
 			path = Modules;
@@ -308,6 +334,7 @@
 			files = (
 				FA2990042DC479AC0047763E /* LoginViewController.xib in Resources */,
 				FA360E752DC2203A00B9FB61 /* LaunchScreen.storyboard in Resources */,
+				FA1CE9122DC4A901004D2E9F /* DashboardViewController.xib in Resources */,
 				FA360E722DC2203A00B9FB61 /* Assets.xcassets in Resources */,
 				FA360E702DC2203800B9FB61 /* Main.storyboard in Resources */,
 				7418D1282DC6614F00A5B6D5 /* BadgesSheetViewController.xib in Resources */,
@@ -334,6 +361,7 @@
 				7418D1112DC4BDD300A5B6D5 /* ChallengePresenter.swift in Sources */,
 				7418D1172DC4C65200A5B6D5 /* MenuProfileInteractor.swift in Sources */,
 				FA1CE9022DC48385004D2E9F /* GeneralButton.swift in Sources */,
+				FA1CE9102DC4A901004D2E9F /* DashboardInteractor.swift in Sources */,
 				FA298FE32DC476300047763E /* BasePresenter.swift in Sources */,
 				FA298FE72DC476740047763E /* BaseRouter.swift in Sources */,
 				7418D1152DC4BDEF00A5B6D5 /* ChallengeInteractor.swift in Sources */,
@@ -353,6 +381,15 @@
 				FA298FE52DC476520047763E /* BaseInteractor.swift in Sources */,
 				7418D11F2DC655D500A5B6D5 /* BadgesViewCell.swift in Sources */,
 				7418D1342DC735ED00A5B6D5 /* NotifBadgesInteractor.swift in Sources */,
+				FA1CE90E2DC4A901004D2E9F /* DashboardRouter.swift in Sources */,
+				FA2990002DC479AC0047763E /* LoginRouter.swift in Sources */,
+				FA360E692DC2203800B9FB61 /* AppDelegate.swift in Sources */,
+				FA1CE90D2DC4A901004D2E9F /* DashboardPresenter.swift in Sources */,
+				FA360E6B2DC2203800B9FB61 /* SceneDelegate.swift in Sources */,
+				FA2990012DC479AC0047763E /* LoginViewController.swift in Sources */,
+				FA298FE52DC476520047763E /* BaseInteractor.swift in Sources */,
+				FA1CE9112DC4A901004D2E9F /* DashboardEntity.swift in Sources */,
+				FA1CE90F2DC4A901004D2E9F /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: BaseViewController {
 
     // MARK: - Properties
+    @IBOutlet weak var loginButton: UIButton!
     var presenter: LoginPresenter
     
     // MARK: - Lifecycle Methods
@@ -33,7 +34,19 @@ class LoginViewController: BaseViewController {
 extension LoginViewController {
     // TODO: Implement View Output Methods
     
-    private func setup() {
-        
+    func setup() {
+        setupView()
+    }
+    
+    private func setupView() {
+        loginButton.setTitle(" Login", for: .normal)
+        loginButton.tintColor = .primaryBSIGreen
+        loginButton.setImage(UIImage(resource: .icLogin), for: .normal)
+        loginButton.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
+    }
+    
+    @objc func loginAction() {
+        guard let navigation = self.navigationController else { return }
+        presenter.login(from: navigation)
     }
 }
