@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +17,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuProfileView" customModule="BSIMobile" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuProfileView" customModule="Hackathon_By_BSI" customModuleProvider="target">
             <connections>
                 <outlet property="accountInfoLabel" destination="N2g-D7-dNP" id="FwC-mZ-aen"/>
                 <outlet property="accountInformationButton" destination="eRf-fH-JWW" id="Xlh-Oa-2YB"/>
@@ -37,10 +36,7 @@
                 <outlet property="emailVerifImage" destination="Bbr-7t-EUS" id="iIs-Wv-5as"/>
                 <outlet property="emailVerificationButton" destination="hua-Gk-tnX" id="VLO-i2-csh"/>
                 <outlet property="emailVerificationView" destination="bCJ-XH-9Li" id="pQe-g0-6LQ"/>
-                <outlet property="flagImage" destination="M0U-IN-ewz" id="lQl-SF-M6D"/>
-                <outlet property="flagImageView" destination="mOh-hA-1PA" id="Ywt-ID-n4S"/>
                 <outlet property="generalSettingButton" destination="jbK-ed-XYb" id="ucJ-Db-Jpf"/>
-                <outlet property="headerNavigation" destination="5TE-Ro-Ub1" id="Zug-tI-TmS"/>
                 <outlet property="helpCenterButton" destination="vEe-L2-NPY" id="G9Y-Go-XtO"/>
                 <outlet property="helpCenterLabel" destination="z1E-WJ-2KP" id="foP-MT-uHs"/>
                 <outlet property="imageView" destination="NIw-gt-ON0" id="9aP-TT-ZeH"/>
@@ -54,7 +50,6 @@
                 <outlet property="manageBifastLabel" destination="pwP-fL-yJi" id="dYQ-I4-m7q"/>
                 <outlet property="manageTransactionLabel" destination="tHq-PN-CsJ" id="2aE-fa-Efq"/>
                 <outlet property="manajementTrxButton" destination="pf2-XU-7YX" id="TMJ-9x-saR"/>
-                <outlet property="navigation" destination="QE7-b9-mJx" id="1au-z3-zd9"/>
                 <outlet property="others" destination="cgi-wD-inA" id="3BG-Yw-03z"/>
                 <outlet property="proxyBiFastButton" destination="qbd-dA-c3E" id="As0-jN-gcv"/>
                 <outlet property="savingsSetting" destination="sdd-pJ-e7s" id="LdF-0N-W9Q"/>
@@ -90,56 +85,9 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aC6-7h-zb1" userLabel="ViewHeader">
                             <rect key="frame" x="0.0" y="52" width="393" height="85"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QE7-b9-mJx" customClass="NavigationHeader" customModule="BSIMobile" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
-                                    <subviews>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-hA-1PA">
-                                            <rect key="frame" x="295" y="4" width="70" height="40"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-flag-id" translatesAutoresizingMaskIntoConstraints="NO" id="M0U-IN-ewz">
-                                                    <rect key="frame" x="12" y="10" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="NNy-D4-7m8"/>
-                                                        <constraint firstAttribute="height" constant="20" id="i2S-Mb-fsi"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down_gray" translatesAutoresizingMaskIntoConstraints="NO" id="jlf-bd-nVZ">
-                                                    <rect key="frame" x="38" y="10" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="tBj-xH-EMK"/>
-                                                        <constraint firstAttribute="width" constant="20" id="uii-Cs-4mL"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" name="GreyColor300 (#E0E0E0)"/>
-                                            <constraints>
-                                                <constraint firstItem="jlf-bd-nVZ" firstAttribute="leading" secondItem="M0U-IN-ewz" secondAttribute="trailing" constant="6" id="0ms-Of-Uf5"/>
-                                                <constraint firstAttribute="width" constant="70" id="5Ci-DM-ObQ"/>
-                                                <constraint firstItem="M0U-IN-ewz" firstAttribute="centerY" secondItem="mOh-hA-1PA" secondAttribute="centerY" id="IMo-s5-H0J"/>
-                                                <constraint firstItem="M0U-IN-ewz" firstAttribute="top" secondItem="jlf-bd-nVZ" secondAttribute="top" id="Oj2-8c-Wnj"/>
-                                                <constraint firstItem="M0U-IN-ewz" firstAttribute="leading" secondItem="mOh-hA-1PA" secondAttribute="leading" constant="12" id="Oym-p6-Xri"/>
-                                                <constraint firstAttribute="height" constant="40" id="l94-JN-6TR"/>
-                                                <constraint firstItem="jlf-bd-nVZ" firstAttribute="centerY" secondItem="mOh-hA-1PA" secondAttribute="centerY" id="ldr-CN-aZX"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="mOh-hA-1PA" firstAttribute="centerY" secondItem="QE7-b9-mJx" secondAttribute="centerY" id="0Wo-IH-fXa"/>
-                                        <constraint firstItem="mOh-hA-1PA" firstAttribute="centerY" secondItem="QE7-b9-mJx" secondAttribute="centerY" id="AgV-ZE-UGe"/>
-                                        <constraint firstAttribute="height" constant="48" id="Qoz-C2-M6I"/>
-                                        <constraint firstItem="mOh-hA-1PA" firstAttribute="centerY" secondItem="QE7-b9-mJx" secondAttribute="centerY" id="kzk-Bd-628"/>
-                                        <constraint firstAttribute="trailing" secondItem="mOh-hA-1PA" secondAttribute="trailing" constant="28" id="oKv-zr-zxQ"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
                             <color key="backgroundColor" name="GreyColor50 (#FAFAFA)"/>
                             <constraints>
-                                <constraint firstItem="QE7-b9-mJx" firstAttribute="top" secondItem="aC6-7h-zb1" secondAttribute="top" id="5TE-Ro-Ub1"/>
-                                <constraint firstItem="QE7-b9-mJx" firstAttribute="leading" secondItem="aC6-7h-zb1" secondAttribute="leading" id="6zX-Hk-02M"/>
                                 <constraint firstAttribute="height" constant="85" id="P77-wu-DtG"/>
-                                <constraint firstAttribute="trailing" secondItem="QE7-b9-mJx" secondAttribute="trailing" id="XXL-GD-o2w"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="pU2-hJ-bcn"/>
                             </constraints>
                         </view>
@@ -149,7 +97,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIw-gt-ON0">
                                     <rect key="frame" x="162.66666666666666" y="0.0" width="68" height="68"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMF-N4-pDE" customClass="ProfileImage" customModule="BSIMobile" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMF-N4-pDE" customClass="ProfileImage" customModule="Hackathon_By_BSI" customModuleProvider="target">
                                             <rect key="frame" x="4" y="4" width="60" height="60"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -160,7 +108,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6r-fg-I4M" customClass="ProfileImage" customModule="BSIMobile" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6r-fg-I4M" customClass="ProfileImage" customModule="Hackathon_By_BSI" customModuleProvider="target">
                                             <rect key="frame" x="4" y="4" width="60" height="60"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -193,7 +141,7 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shafia Riani" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Hr-ggk">
-                                    <rect key="frame" x="152" y="76" width="89" height="21"/>
+                                    <rect key="frame" x="154" y="76" width="85" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="TVc-pO-iei"/>
                                     </constraints>
@@ -245,13 +193,13 @@
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKI-Hj-uta">
-                    <rect key="frame" x="0.0" y="211" width="393" height="641.00000000000023"/>
+                    <rect key="frame" x="0.0" y="211" width="393" height="641"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-g6-0rz">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="1432.3333333333333"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1423"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Qmv-dC-VVA">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="1400.3333333333333"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="1391"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Tes-EF-H0t">
                                             <rect key="frame" x="46" y="0.0" width="301" height="417"/>
@@ -267,7 +215,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telepon BSI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-az-Xvg">
-                                                            <rect key="frame" x="4.9999999999999964" y="64" width="63.666666666666657" height="349"/>
+                                                            <rect key="frame" x="4.6666666666666643" y="64" width="64.333333333333343" height="349"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -300,7 +248,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Aisyah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E2-NI-qpd">
-                                                            <rect key="frame" x="4" y="64" width="66" height="349"/>
+                                                            <rect key="frame" x="4.6666666666666856" y="64" width="64.666666666666671" height="349"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -333,7 +281,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM &amp; Cabang" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaG-3L-uoD">
-                                                            <rect key="frame" x="-4" y="64" width="82" height="353"/>
+                                                            <rect key="frame" x="-3.3333333333333144" y="64" width="80.666666666666671" height="353"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -384,13 +332,13 @@
                                             </constraints>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="eah-ic-uvC">
-                                            <rect key="frame" x="24" y="449" width="345" height="888"/>
+                                            <rect key="frame" x="24" y="449" width="345" height="882"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PNo-R2-o7H">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="171.33333333333334"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="169.33333333333334"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengaturan Akun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-G4-0M7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="18.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="16.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="14"/>
                                                             <color key="textColor" name="TextColorBlack80"/>
                                                             <nil key="highlightedColor"/>
@@ -399,7 +347,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kS-BG-Fb1">
-                                                            <rect key="frame" x="0.0" y="19.333333333333371" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="17.333333333333371" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-NE-XcG">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -410,7 +358,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informasi akun" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2g-D7-dNP">
-                                                                    <rect key="frame" x="40" y="27" width="114" height="20"/>
+                                                                    <rect key="frame" x="39.999999999999993" y="27" width="105.33333333333331" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -464,7 +412,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2J-Ge-H2N">
-                                                            <rect key="frame" x="0.0" y="94.333333333333371" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="92.333333333333371" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shield" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yD8-y0-wnO">
                                                                     <rect key="frame" x="0.0" y="25.666666666666661" width="24" height="23.333333333333339"/>
@@ -476,7 +424,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login dan keamanan" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTd-0V-wl0">
-                                                                    <rect key="frame" x="40" y="27" width="158" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="150" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -520,21 +468,21 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-lZ-41O">
-                                                            <rect key="frame" x="0.0" y="169.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="167.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="ieq-7w-qta"/>
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw1-0a-52Y">
-                                                            <rect key="frame" x="0.0" y="171.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="169.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="Eus-10-2IK"/>
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wn6-7j-9JF">
-                                                            <rect key="frame" x="0.0" y="171.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="169.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-setting" translatesAutoresizingMaskIntoConstraints="NO" id="5kR-py-91b">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -545,7 +493,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengaturan umum" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kES-nS-u1D">
-                                                                    <rect key="frame" x="40" y="27" width="142" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="132" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -599,10 +547,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-1c-0VG">
-                                                            <rect key="frame" x="0.0" y="171.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="169.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QAo-Mw-U1k">
-                                                                    <rect key="frame" x="0.0" y="24.666666666666661" width="24" height="24.333333333333339"/>
+                                                                    <rect key="frame" x="0.0" y="24.333333333333336" width="24" height="24.333333333333336"/>
                                                                     <color key="tintColor" systemColor="labelColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="24" id="dSN-Os-2FS"/>
@@ -611,7 +559,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kode-in Aja" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gl-gy-KW2">
-                                                                    <rect key="frame" x="39.999999999999993" y="27" width="90.333333333333314" height="20"/>
+                                                                    <rect key="frame" x="40.000000000000007" y="27" width="83.666666666666686" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -647,10 +595,10 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="o0D-dg-a5w">
-                                                    <rect key="frame" x="0.0" y="202.33333333333334" width="345" height="408.33333333333326"/>
+                                                    <rect key="frame" x="0.0" y="200.33333333333334" width="345" height="406.33333333333326"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengaturan Transaksi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ko-y4-Pi4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="18.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="16.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="14"/>
                                                             <color key="textColor" name="TextColorBlack80"/>
                                                             <nil key="highlightedColor"/>
@@ -659,7 +607,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHQ-hy-S8o">
-                                                            <rect key="frame" x="0.0" y="19.333333333333258" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="17.333333333333258" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="9vM-vj-yBx">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -671,7 +619,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manajemen Transaksi" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-PN-CsJ">
-                                                                    <rect key="frame" x="40" y="27" width="167.33333333333334" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="155" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -713,14 +661,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-3c-TXw">
-                                                            <rect key="frame" x="0.0" y="94.333333333333258" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="92.333333333333258" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="VYj-aX-NrP"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-GI-yds">
-                                                            <rect key="frame" x="0.0" y="97.333333333333258" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="95.333333333333258" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="server" translatesAutoresizingMaskIntoConstraints="NO" id="dmO-Fh-cLN">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -731,7 +679,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengaturan BI Fast" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-fL-yJi">
-                                                                    <rect key="frame" x="40" y="27" width="143" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="137.33333333333334" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -775,14 +723,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvB-YT-zhg">
-                                                            <rect key="frame" x="0.0" y="172.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="170.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="Oap-XU-h2B"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBH-YD-WTz">
-                                                            <rect key="frame" x="0.0" y="175.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="173.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="hDm-BD-Odh">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -793,7 +741,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atur Limit" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tN-YY-iLI">
-                                                                    <rect key="frame" x="39.999999999999993" y="27" width="76.333333333333314" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="69" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -837,14 +785,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-1d-vP5">
-                                                            <rect key="frame" x="0.0" y="250.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="248.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="AeE-Dh-XnA"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-Fn-GcH">
-                                                            <rect key="frame" x="0.0" y="253.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="251.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="PWM-Rw-evZ">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -855,7 +803,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifikasi SMS" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amh-ra-x2j">
-                                                                    <rect key="frame" x="40.000000000000007" y="27" width="109.66666666666669" height="20"/>
+                                                                    <rect key="frame" x="39.999999999999993" y="27" width="105.33333333333331" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -899,14 +847,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dY-y7-0gG">
-                                                            <rect key="frame" x="0.0" y="328.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="326.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="CD3-lK-vKJ"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tov-aP-Goh">
-                                                            <rect key="frame" x="0.0" y="331.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="329.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fon-bN-1Xq">
                                                                     <rect key="frame" x="0.0" y="27.333333333333332" width="24" height="19.333333333333339"/>
@@ -918,7 +866,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pelaporan Transaksi" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iem-MQ-gCa">
-                                                                    <rect key="frame" x="40" y="27" width="154.66666666666666" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="144.33333333333334" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -962,21 +910,21 @@
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip9-XF-ppM">
-                                                            <rect key="frame" x="0.0" y="405.99999999999989" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="403.99999999999989" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="Fqu-2i-Ee1"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYW-Gl-K8F">
-                                                            <rect key="frame" x="0.0" y="406.33333333333337" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="404.33333333333337" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="hRI-CN-GFk"/>
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuA-Pd-9cX">
-                                                            <rect key="frame" x="0.0" y="408.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="406.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-BI-Fast" translatesAutoresizingMaskIntoConstraints="NO" id="75z-dy-XIC">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -987,7 +935,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Transaksi BI Fast" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-9y-DWq">
-                                                                    <rect key="frame" x="40.000000000000014" y="27" width="181.33333333333337" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="172.33333333333334" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1038,7 +986,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-Bm-HdP">
-                                                            <rect key="frame" x="0.0" y="408.33333333333337" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="406.33333333333337" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="ceF-pN-uY3">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -1049,7 +997,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaksi Terjadwal" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0k-TY-6af">
-                                                                    <rect key="frame" x="40" y="27" width="150.66666666666666" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="138.66666666666666" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1106,7 +1054,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-JR-339">
-                                                    <rect key="frame" x="0.0" y="626.33333333333326" width="345" height="81"/>
+                                                    <rect key="frame" x="0.0" y="622.33333333333326" width="345" height="81"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengaturan Tabungan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdd-pJ-e7s">
                                                             <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
@@ -1127,7 +1075,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manajemen Kartu" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awc-Ue-AIo">
-                                                                    <rect key="frame" x="40" y="27" width="136" height="20"/>
+                                                                    <rect key="frame" x="39.999999999999993" y="27" width="126.33333333333331" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1190,10 +1138,10 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-7t-qh1">
-                                                    <rect key="frame" x="0.0" y="641.66666666666674" width="345" height="246.33333333333337"/>
+                                                    <rect key="frame" x="0.0" y="637.66666666666674" width="345" height="244.33333333333337"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lainnya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-wD-inA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="18.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="16.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="14"/>
                                                             <color key="textColor" name="TextColorBlack80"/>
                                                             <nil key="highlightedColor"/>
@@ -1202,7 +1150,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-CM-eQM">
-                                                            <rect key="frame" x="0.0" y="19.333333333333258" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="17.333333333333258" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kurs" translatesAutoresizingMaskIntoConstraints="NO" id="56N-ho-w8d">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -1213,7 +1161,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informasi Kurs &amp; Emas" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-jL-EiK">
-                                                                    <rect key="frame" x="40" y="27" width="172.66666666666666" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="162.66666666666666" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1267,7 +1215,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMW-6r-OIR">
-                                                            <rect key="frame" x="0.0" y="94" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="92" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Keyboard" translatesAutoresizingMaskIntoConstraints="NO" id="M6Y-qw-fqX">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -1278,7 +1226,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aktifkan BSI Keyboard" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA1-6G-hAB">
-                                                                    <rect key="frame" x="40" y="27" width="170.66666666666666" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="161.33333333333334" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1308,14 +1256,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT8-aT-YW8">
-                                                            <rect key="frame" x="0.0" y="94" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="92" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="SCR-ou-oB2"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-v9-wIs">
-                                                            <rect key="frame" x="0.0" y="94.333333333333258" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="92.333333333333258" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQY-GO-eQs">
                                                                     <rect key="frame" x="0.0" y="25.333333333333329" width="24" height="23.666666666666671"/>
@@ -1327,7 +1275,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pusat bantuan" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-WJ-2KP">
-                                                                    <rect key="frame" x="39.999999999999993" y="27" width="112.33333333333331" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="104" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1371,14 +1319,14 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em1-nF-UVe">
-                                                            <rect key="frame" x="0.0" y="169.33333333333326" width="345" height="2"/>
+                                                            <rect key="frame" x="0.0" y="167.33333333333326" width="345" height="2"/>
                                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="B5v-wz-RG3"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww3-SM-vAX">
-                                                            <rect key="frame" x="0.0" y="172.33333333333326" width="345" height="74"/>
+                                                            <rect key="frame" x="0.0" y="170.33333333333326" width="345" height="74"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="jdm-z8-Pfy">
                                                                     <rect key="frame" x="0.0" y="25" width="24" height="24"/>
@@ -1389,7 +1337,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keluar" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWm-mC-bDE">
-                                                                    <rect key="frame" x="40" y="27" width="48.666666666666657" height="20"/>
+                                                                    <rect key="frame" x="40" y="27" width="45.666666666666657" height="20"/>
                                                                     <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
                                                                     <color key="textColor" name="SecondaryColorRed (#EA4138)"/>
                                                                     <nil key="highlightedColor"/>
@@ -1443,7 +1391,7 @@
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eJ-gD-MlH">
-                                            <rect key="frame" x="56" y="1369" width="281.33333333333331" height="31.333333333333258"/>
+                                            <rect key="frame" x="57.333333333333343" y="1363" width="278.33333333333326" height="28"/>
                                             <string key="text">App Version 3.1.3 (7761)
 Copyright © 2024 - PT Bank Syariah Indonesia, Tbk</string>
                                             <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
@@ -1506,8 +1454,6 @@ Copyright © 2024 - PT Bank Syariah Indonesia, Tbk</string>
         <image name="gift" catalog="system" width="128" height="125"/>
         <image name="ic-BI-Fast" width="24" height="24"/>
         <image name="ic-camera" width="20" height="20"/>
-        <image name="ic-flag-id" width="40" height="40"/>
-        <image name="ic_arrow_down_gray" width="24" height="24"/>
         <image name="icon-atm-cabang-revamp" width="56.333332061767578" height="56"/>
         <image name="icon-bsi-call-revamp" width="56.333332061767578" height="56"/>
         <image name="icon-chat-aisyah-revamp" width="56.333332061767578" height="56"/>
@@ -1520,11 +1466,8 @@ Copyright © 2024 - PT Bank Syariah Indonesia, Tbk</string>
         <image name="mail" width="24" height="24"/>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <image name="server" width="24" height="24"/>
-        <image name="shield" catalog="system" width="128" height="121"/>
+        <image name="shield" catalog="system" width="121" height="128"/>
         <image name="user" width="24" height="24"/>
-        <namedColor name="GreyColor300 (#E0E0E0)">
-            <color red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="GreyColor50 (#FAFAFA)">
             <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
