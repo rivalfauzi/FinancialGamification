@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Hackathon_By_BSI" customModuleProvider="target">
             <connections>
+                <outlet property="loginButton" destination="eaP-1D-vJs" id="QkA-8P-hrX"/>
                 <outlet property="view" destination="qbI-Ai-bd5" id="1Z0-Ea-ODe"/>
             </connections>
         </placeholder>
