@@ -14,12 +14,8 @@ class MenuProfileView: BaseViewController, UIAdaptivePresentationControllerDeleg
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIView!
     @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var userImageView2: UIImageView!
     @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var cameraButton: UIButton!
-    @IBOutlet weak var headerNavigation: NSLayoutConstraint!
     @IBOutlet weak var accountSetting: UILabel!
-    @IBOutlet weak var savingsSetting: UILabel!
     @IBOutlet weak var others: UILabel!
     @IBOutlet weak var appVersionLabel: UILabel!
 
@@ -29,14 +25,10 @@ class MenuProfileView: BaseViewController, UIAdaptivePresentationControllerDeleg
     @IBOutlet weak var chatAisyahButton: UIButton!
     @IBOutlet weak var accountInformationButton: UIButton!
     @IBOutlet weak var loginSecurityButton: UIButton!
-    @IBOutlet weak var trxScheduleButton: UIButton!
-    @IBOutlet weak var biFastButton: UIButton!
     @IBOutlet weak var smsNotifButton: UIButton!
-    @IBOutlet weak var cardManagementButton: UIButton!
     @IBOutlet weak var limitInformationButton: UIButton!
     @IBOutlet weak var proxyBiFastButton: UIButton!
     @IBOutlet weak var kursGoldInformationButton: UIButton!
-    @IBOutlet weak var generalSettingButton: UIButton!
     @IBOutlet weak var helpCenterButton: UIButton!
     @IBOutlet weak var transactionComplaintButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
@@ -46,7 +38,6 @@ class MenuProfileView: BaseViewController, UIAdaptivePresentationControllerDeleg
     @IBOutlet weak var callBSILabel: UILabel!
     @IBOutlet weak var chatAisyahLabel: UILabel!
     @IBOutlet weak var atmAndBranchLabel: UILabel!
-    @IBOutlet weak var titleGeneralSetting: UILabel!
     @IBOutlet weak var accountInfoLabel: UILabel!
     @IBOutlet weak var loginAndSecurityLabel: UILabel!
     @IBOutlet weak var transactionSettingLabel: UILabel!
@@ -58,19 +49,11 @@ class MenuProfileView: BaseViewController, UIAdaptivePresentationControllerDeleg
     @IBOutlet weak var kursInfoLabel: UILabel!
     @IBOutlet weak var helpCenterLabel: UILabel!
     @IBOutlet weak var logoutLabel: UILabel!
-    @IBOutlet weak var emailVerificationView: UIView!
-    @IBOutlet weak var emailVerificationButton: UIButton!
-    @IBOutlet weak var emailVerifImage: UIImageView!
     @IBOutlet weak var changeLanguageButton: UIButton!
-    @IBOutlet weak var flagImage: UIImageView!
-    @IBOutlet weak var flagImageView: UIView!
 
     var picker = UIImagePickerController()
     var hideThirdButton: Bool = false
     var popupSMSNotif: Bool = false
-    var isCamera: Bool = false
-    var email: String?
-    var isEmailVerified: Bool?
     var imageURL: String?
     var nameAlias: String?
     var deletePhotoCallback: (() -> Void)?
@@ -113,13 +96,10 @@ extension MenuProfileView {
         self.picker.allowsEditing = true
         picker.presentationController?.delegate = self
 
-        
-        helpCenterLabel.text = "Informasi Tantangan"
         userImageView.layer.cornerRadius = userImageView.frame.height/2
         userImageView.layer.masksToBounds = true
 //        userImage.layer.cornerRadius = userImage.frame.height/2
         imageView.layer.cornerRadius = imageView.frame.height/2
-        cameraButton.layer.cornerRadius = cameraButton.frame.height/2
         
         scrollView.showsVerticalScrollIndicator = false
 
@@ -135,6 +115,6 @@ extension MenuProfileView {
         presenter.navigateToChallenge(from: navigation)
     }
 
-    }
+}
 
 

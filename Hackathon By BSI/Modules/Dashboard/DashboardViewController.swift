@@ -60,5 +60,23 @@ extension DashboardViewController {
         copyIcon.setTitle("", for: .normal)
         copyIcon.setImage(UIImage(systemName: "square.on.square"), for: .normal)
         copyIcon.tintColor = .systemGray
+        profileButton.addTarget(self, action: #selector(navigateToProfile), for: .touchUpInside)
+        transferButton.addTarget(self, action: #selector(navigateToTransfer), for: .touchUpInside)
+        buttonLogout.addTarget(self, action: #selector(logout), for: .touchUpInside)
+    }
+    
+    @objc func navigateToProfile() {
+        guard let navigation = self.navigationController else { return }
+        presenter.navigateToProfile(from: navigation)
+    }
+    
+    @objc func navigateToTransfer() {
+        guard let navigation = self.navigationController else { return }
+        print("navigate to transfer")
+    }
+    
+    @objc func logout() {
+        guard let navigation = self.navigationController else { return }
+        presenter.logout(from: navigation)
     }
 }

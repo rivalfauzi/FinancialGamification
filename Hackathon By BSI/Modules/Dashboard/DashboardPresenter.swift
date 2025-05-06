@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class DashboardPresenter: BasePresenter {
 
@@ -19,5 +20,12 @@ class DashboardPresenter: BasePresenter {
         self.interactor = interactor
     }
     
+    func navigateToProfile(from navigation: UINavigationController) {
+        router.navigateToProfile(from: navigation)
+    }
+    
+    func logout(from navigation: UINavigationController) {
+        router.logout(from: navigation)
+    }
     
 }

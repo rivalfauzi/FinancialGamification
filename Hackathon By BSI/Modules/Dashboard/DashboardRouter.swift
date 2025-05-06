@@ -20,4 +20,13 @@ class DashboardRouter: BaseRouter {
         return view
     }
     
+    func navigateToProfile(from navigation: UINavigationController) {
+        let view = MenuProfileRouter().showView()
+        navigation.pushViewController(view, animated: true)
+    }
+    
+    func logout(from navigation: UINavigationController) {
+        navigation.popViewController(animated: true)
+    }
+    
 }
