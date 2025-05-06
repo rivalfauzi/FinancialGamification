@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LoginPresenter: BasePresenter {
 
@@ -19,5 +20,7 @@ class LoginPresenter: BasePresenter {
         self.interactor = interactor
     }
     
-    
+    func login(from navigation: UINavigationController) {
+        router.navigateToDashboard(from: navigation)
+    }
 }
